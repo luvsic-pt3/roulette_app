@@ -120,15 +120,15 @@ export function Roulette({candidates, spin}: RouletteProps) {
               </g>
             ) : null}
           </g>
-          {candidates.map((c, i) => (
+          {candidates.map((candidate, index) => (
             <g
-              transform={`rotate(${(360 / numSlots) * i}, ${circleProps.cx}, ${
+              transform={`rotate(${(360 / numSlots) * index}, ${circleProps.cx}, ${
                 circleProps.cy
               }) translate(0, ${-radius * 1.5 + 25})`}
-              key={i}
+              key={index}
             >
               <text x={0} y={0} textAnchor="middle">
-                {c.name}
+                {candidate.name}
               </text>
             </g>
           ))}
