@@ -23,7 +23,7 @@ export function Roulette({candidates, spin}: RouletteProps) {
     delay: 2000,
     config: {
       easing: easePolyOut,
-      duration: 10000
+      duration: 13000
     }
   }))
 
